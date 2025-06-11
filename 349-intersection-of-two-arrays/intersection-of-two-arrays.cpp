@@ -5,7 +5,7 @@ public:
         set<int> set2(nums2.begin(),nums2.end());
         vector<int>ans;
         for(int num : set1){
-            if (set2.find(num) != set2.end()){
+            if (set2.count(num)) {
                 ans.push_back(num);
             }
         }
